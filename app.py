@@ -21,7 +21,7 @@ class User(db.Model):
 with app.app_context():
     db.create_all()
 
-@app.post("/")
+@app.get("/")
 def index():
     return "Welcome to Taxify"
 
